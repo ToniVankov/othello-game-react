@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*
+  Othello
+*/
+
+.gamePlayground {
+  background-color: #ccc;
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+}
+
+
+.gameSquare {
+  float: left;
+  margin: 0.5%;
+  border: 1px solid #888;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.whiteCheckers {
+  background-color: #eee;
+}
+
+.blackCheckers {
+  background-color: #444;
+}
+
+.availableCheckers {
+  background-color: #ee9;
+}
