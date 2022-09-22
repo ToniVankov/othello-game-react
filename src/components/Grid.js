@@ -21,10 +21,10 @@ function Grid({ stat, setStat }) {
     utils.gameMakeMove(x, y, cellStates, setCellStates, stat, setStat);
   }
 
-  return cellStates.map((s_el, s_index) => {
-    return (
-      <div className="grid" key={s_index}>
-        {s_el.map((e_el, e_index) => {
+  return (
+    <div className="gameGrid">
+      {cellStates.map((s_el, s_index) => {
+        return s_el.map((e_el, e_index) => {
           return (
             <Square
               key={uuid()}
@@ -33,10 +33,10 @@ function Grid({ stat, setStat }) {
               onClick={() => handleGameTurn(s_index, e_index)}
             />
           );
-        })}
-      </div>
-    );
-  });
+        });
+      })}
+    </div>
+  );
 }
 
 export default Grid;

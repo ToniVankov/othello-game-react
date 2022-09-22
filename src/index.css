@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: black;
+  color: whitesmoke;
 }
 
 code {
@@ -17,30 +20,64 @@ code {
 */
 
 .gamePlayground {
-  background-color: #ccc;
-  width: 200px;
-  height: 200px;
-  margin: 50px;
+  /*background-color: #ccc;*/
+  width: 600px;
+  height: 600px;
+  margin: 50px auto;
+}
+
+.gameGrid {
+  /*background-color: #ccc;*/
+  width: 600px;
+  /*height: 600px;*/
+  margin: 5px auto;
+
+  /* display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;*/
 }
 
 
 .gameSquare {
-  float: left;
-  margin: 0.5%;
-  border: 1px solid #888;
-  width: 20px;
-  height: 20px;
-  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-color: #28883e;
+  /*border: 1px solid #888;*/
+  border-radius: 5px;
+  margin: 0px 2px;
+  position: relative;
+  /*box-shadow: 1px 1px 3px;*/
 }
 
 .whiteCheckers {
   background-color: #eee;
+  
+  width: 62px;
+  height: 62px;
+  margin: 2px;
+  border-radius: 50%;
+  position: absolute;
 }
 
 .blackCheckers {
   background-color: #444;
+  
+  width: 62px;
+  height: 62px;
+  margin: 2px;
+  border-radius: 50%;
+  position: absolute;
 }
 
-.availableCheckers {
-  background-color: #ee9;
+.availableMoves {
+  width: 62px;
+  height: 62px;
+  margin: 2px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.availableMoves:hover {
+  background-color: greenyellow;
 }
